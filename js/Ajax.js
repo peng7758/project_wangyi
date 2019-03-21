@@ -1,34 +1,34 @@
 function sendAjax(url,options){
 	var __DEFAULT = {
-		method:"GET",
+		method:'GET',
 		data:null,
 		dataType:'json',
 		...options
 	}
-	var {data} = __DEFAULT.data;
+	var {data} = __DEFAULT.data; 
 	var method = __DEFAULT.method.toUpperCase();
-	if(method == "GET"){
+	if(__DEFAULT.method == "GET"){
 		for(var attr in data){
-			url += `&${attr}=${data[attr]}`
+			url += `&${attr}=${data[attr]}`;
 		}
-		url += '&_=' + Date.now();
-		if(!url.includes('?')){
-			url = url.replace('&','?');
+		url += "&_=" + Date.now();
+		if(!url.includes("?")){
+			url = url.replace("&","?")
 		}
 		data = null;
-	}else{
+	}else {
 		data = JSON.stringify(data);
 	}
-	var xhr = new XMLHttpRequest();
-	xhr.open(method,url,true);
+	var xhr =new XMLHttpRequest();
+	xhr.open(__DEFAULT.method,url,true);
 	xhr.send(data);
-	return new promise ((resolve,reject)=>{
+	return new Promise((resolve,reject) => {
 		xhr.onreadystatechange = function(){
-			if(xhr.readyStata == 4){
-				var data = xhr.resposeText
+			if(xhr.readyState == 4){
+				var data = xhr.responseText;
 				if(xhr.status == 200){
-					if(__DEFAULT.dataTtype == 'json'){
-						data = JSON.preas(data);
+					if(__DEFAULT.dataType == "json"){
+						data = JSON.parse(data);
 					}
 					resolve()
 				}else{
