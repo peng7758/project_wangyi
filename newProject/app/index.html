@@ -5,11 +5,42 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<link rel="stylesheet" href="../dist/css/index.css" />
+	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" href="iconf/iconfont.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
 
 	<body>
+		<!--头部-->
+		<div class="headerFix">
+			<div class="area">
+				<h2><a href="#">网易阅读</a></h2>
+				<ul>
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">出版图书</a>
+					</li>
+					<li>
+						<a href="#">国风中文网</a>
+					</li>
+					<li>
+						<a href="#">采薇书院</a>
+					</li>
+					<li>
+						<a href="#">排行榜</a>
+					</li>
+					<li>
+						<a href="#">客户端下载</a>
+					</li>
+				</ul>
+				<div class="herdFix-search">
+					<input type="text" class="search" placeholder="请输入关键字" />
+					<ul class="showBox"></ul>
+					<button class="btn-seach"></button>
+				</div>
+			</div>
+		</div>
 		<div class="head">
 			<div class="area">
 				<header>
@@ -41,7 +72,7 @@
 					<div class="login">
 						<ul>
 							<li>
-								<a href="login.html">登陆<i class="triangle"></i></a>
+								<a href="#">登陆<i class="triangle"></i></a>
 							</li>
 							<li><span>|</span></li>
 							<li>
@@ -54,15 +85,36 @@
 						</ul>
 					</div>
 					<div class="login-box">
-						<div>
+						<div class="login-title">
 							<a href="#">关闭</a>
 							<h4>网易邮箱登陆</h4>
 						</div>
-						<div></div>
+						<div>
+							<div>
+								<form action="" method="post">
+									<div>
+										<input type="email" placeholder="邮箱账号(包含手机邮箱)" />
+									</div>
+									<div>
+										<input type="password/" placeholder="6-16位密码,区分大小写" />
+									</div>
+									<div>
+
+									</div>
+									<div>
+										<button class="login-btn">登陆</button>
+									</div>
+								</form>
+							</div>
+							<div>
+
+							</div>
+						</div>
 					</div>
 				</header>
 			</div>
 		</div>
+		<!--内容部分-->
 		<section>
 			<div class="area">
 				<div class="nav-seach">
@@ -98,13 +150,13 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="">个人中心</a>
+							<a href="" class="iconfont">&#xe602; 个人中心</a>
 						</li>
 						<li>
-							<a href="">充值</a>
+							<a href="" class="iconfont">&#xe688; 充值</a>
 						</li>
 						<li>
-							<a href="">客服端</a>
+							<a href="" class="iconfont">&#xe600; 客服端</a>
 						</li>
 					</ul>
 				</div>
@@ -162,14 +214,14 @@
 							</li>
 						</ul>
 					</div>
-					<div class="swiper-container">
+					<div class="swiper-container" style="margin: 0;">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"><img src="img/img1.png" title="文在演自传" /></div>
 							<div class="swiper-slide"><img src="img/img2.jpg" title="老中医" /></div>
 							<div class="swiper-slide"><img src="img/img3.png" title="我喜欢你，像风走八千里" /></div>
 							<div class="swiper-slide"><img src="img/img4.png" title="夏末峡谷" /></div>
-							<div class="swiper-slide"><img src="img/img5.jpg" title="村上村书" /></div>
-							<div class="swiper-slide"><img src="img/img6.png" title="我喜欢你，像风走八千里" /></div>
+							<div class="swiper-slide"><img src="img/img5.jpg" title="夏末峡谷" /></div>
+							<div class="swiper-slide"><img src="img/img6.png" title="夏末峡谷" /></div>
 						</div>
 						<!-- Add Pagination -->
 						<div class="swiper-pagination"></div>
@@ -179,10 +231,77 @@
 					</div>
 
 				</div>
+				<div class="section-recommend">
+					<div class="recommend-title">
+						<h2 style="float: left;">主编推荐</h2>
+						<a href="#" class="recommend-word">小说</a>
+						<a href="#">图书</a>
+					</div>
+					<div class="recommend-box clearfix">
+						<div class="showBox clearfix">
+							<ul>
+								<li>
+									<img src="img/bookBack_1.png" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/bookBack_2.jpg" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/bookBack_3.jpg" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/bookBack_1.png" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/bookBack_2.jpg" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/bookBack_3.jpg" />
+									<div>
+										<h3><a href="#">爱情初始化</a></h3>
+										<p>晓月</p>
+										<p>崩溃夫妻重返花样年华，携手碾压生活焦虑，再演爱情萌萌哒！生活和工作的压力</p>
+										<a href="#">立即阅读</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
+		<!--尾部-->
 		<footer>
-
 			<div class="com_foot">
 				<div class="com_footer">
 					<div class="com_footer1">
@@ -211,12 +330,15 @@
 		</footer>
 	</body>
 	<script src="js/Ajax.js"></script>
+	<script src="json/json.json"></script>
 	<script src="js/jquery-2.1.0.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/Jsonp.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
 	<script>
 		showText.init(".search-box");
+		//		showContent.init(".recommend-box");
+		search.init();
 		var swiper = new Swiper('.swiper-container', {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -224,6 +346,7 @@
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
+				disableOnInteraction: false,
 			},
 			pagination: {
 				el: '.swiper-pagination',

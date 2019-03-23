@@ -5,11 +5,42 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<link rel="stylesheet" href="../dist/css/index.css" />
+	<link rel="stylesheet" href="css/shop.css" />
 	<link rel="stylesheet" type="text/css" href="iconf/iconfont.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
 
 	<body>
+		<!--头部-->
+		<div class="headerFix">
+			<div class="area">
+				<h2><a href="#">网易阅读</a></h2>
+				<ul>
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">出版图书</a>
+					</li>
+					<li>
+						<a href="#">国风中文网</a>
+					</li>
+					<li>
+						<a href="#">采薇书院</a>
+					</li>
+					<li>
+						<a href="#">排行榜</a>
+					</li>
+					<li>
+						<a href="#">客户端下载</a>
+					</li>
+				</ul>
+				<div class="herdFix-search">
+					<input type="text" class="search" placeholder="请输入关键字" />
+					<ul class="showBox"></ul>
+					<button class="btn-seach"></button>
+				</div>
+			</div>
+		</div>
 		<div class="head">
 			<div class="area">
 				<header>
@@ -41,7 +72,7 @@
 					<div class="login">
 						<ul>
 							<li>
-								<a href="login.html">登陆<i class="triangle"></i></a>
+								<a href="#">登陆<i class="triangle"></i></a>
 							</li>
 							<li><span>|</span></li>
 							<li>
@@ -54,15 +85,36 @@
 						</ul>
 					</div>
 					<div class="login-box">
-						<div>
+						<div class="login-title">
 							<a href="#">关闭</a>
 							<h4>网易邮箱登陆</h4>
 						</div>
-						<div></div>
+						<div>
+							<div>
+								<form action="" method="post">
+									<div>
+										<input type="email" placeholder="邮箱账号(包含手机邮箱)" />
+									</div>
+									<div>
+										<input type="password/" placeholder="6-16位密码,区分大小写" />
+									</div>
+									<div>
+
+									</div>
+									<div>
+										<button class="login-btn">登陆</button>
+									</div>
+								</form>
+							</div>
+							<div>
+
+							</div>
+						</div>
 					</div>
 				</header>
 			</div>
 		</div>
+		<!--内容部分-->
 		<section>
 			<div class="area">
 				<div class="nav-seach">
@@ -75,114 +127,39 @@
 						<button class="btn-seach"></button>
 					</div>
 					<div class="clouds">
-						<a href="#"><i class="iconfont icon-gouwuche"></i>购物车</a>
 					</div>
 				</div>
 				<div class="nav-nav">
-					<ul>
-						<li>
-							<a href="">首页</a>
-						</li>
-						<li>
-							<a href="">出版图书</a>
-						</li>
-						<li>
-							<a href="">国风中文网</a>
-						</li>
-						<li>
-							<a href="">采薇书院</a>
-						</li>
-						<li>
-							<a href="">排行榜</a>
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<a href="">个人中心</a>
-						</li>
-						<li>
-							<a href="">充值</a>
-						</li>
-						<li>
-							<a href="">客服端</a>
-						</li>
-					</ul>
 				</div>
-				<div class="section-adv">
-					<div class="section-nav">
-						<ul>
-							<li>
-								<p>国风中文网</p>
-								<p>
-									<a href="#" class="line">都市生活</a>
-									<a href="#" class="line">历史传奇</a>
-									<a href="#">玄幻仙侠</a>
-								</p>
-								<p>
-									<a href="#" class="line">悬疑探险</a>
-									<a href="#" class="line">灵异恐怖</a>
-									<a href="#">短篇小说</a>
-								</p>
-							</li>
-							<li>
-								<p>采薇书院</p>
-								<p>
-									<a href="#" class="line">浪漫青春</a>
-									<a href="#" class="line">都市言情</a>
-									<a href="#">古风古韵</a>
-								</p>
-								<p>
-									<a href="#" class="line">穿越架空</a>
-									<a href="#" class="line">宫斗宅斗</a>
-									<a href="#">种田重生</a>
-								</p>
-							</li>
-							<li>
-								<p>图书</p>
-								<p>
-									<a href="#" class="line">小说作品</a>
-									<a href="#" class="line">人文社科</a>
-									<a href="#">成功励志</a>
-								</p>
-								<p>
-									<a href="#" class="line">经济管理</a>
-									<a href="#" class="line">品质生活</a>
-									<a href="#">计算机</a>
-								</p>
-							</li>
-							<li>
-								<p>客户端下载</p>
-								<p>
-									新用户免费畅读五天
-								</p>
-								<p>
-									<a href="#" class="line">10w+原创小说</a>
-									<a href="#">8w+经典出版</a>
-								</p>
-							</li>
-						</ul>
-					</div>
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="img/img1.png" title="文在演自传" /></div>
-							<div class="swiper-slide"><img src="img/img2.jpg" title="老中医" /></div>
-							<div class="swiper-slide"><img src="img/img3.png" title="我喜欢你，像风走八千里" /></div>
-							<div class="swiper-slide"><img src="img/img4.png" title="夏末峡谷" /></div>
-							<div class="swiper-slide"><img src="img/img5.jpg" title="村上村书" /></div>
-							<div class="swiper-slide"><img src="img/img6.png" title="我喜欢你，像风走八千里" /></div>
+				<div class="shopBox">
+					<div class="operation">
+						<div>
+							<a href="#">我的书籍<i class="num" style="color: #000;">0</i></a>
+							<a href="#">我删除的书籍<i class="num" style="color: #000;">0</i></a>
 						</div>
-						<!-- Add Pagination -->
-						<div class="swiper-pagination"></div>
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
 					</div>
-
+					<div class="shopStore" style="height: 100%;">
+						<div class="swiper-container" style="height: 500px;">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+								<div class="swiper-slide"></div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							
+						</div>
+						<p class="append-buttons">
+							<a href="#" class="append-slide">Append Slide</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
+		<!--尾部-->
 		<footer>
-
 			<div class="com_foot">
 				<div class="com_footer">
 					<div class="com_footer1">
@@ -210,21 +187,18 @@
 
 		</footer>
 	</body>
-	<script src="js/Ajax.js"></script>
-	<script src="js/jquery-2.1.0.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/Jsonp.js"></script>
+	<script src="js/shop.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+	<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/Jsonp.js"></script>
 	<script>
 		showText.init(".search-box");
+		var appendNumber = 4;
+		var prependNumber = 1;
 		var swiper = new Swiper('.swiper-container', {
-			slidesPerView: 1,
+			slidesPerView: 3,
+			centeredSlides: true,
 			spaceBetween: 30,
-			loop: true,
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-			},
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
@@ -233,6 +207,10 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+		});
+		document.querySelector('.append-slide').addEventListener('click', function(e) {
+			e.preventDefault();
+			swiper.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
 		});
 	</script>
 
