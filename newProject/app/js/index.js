@@ -1,3 +1,4 @@
+//搜索框
 var showText = (function() {
 	let $el, $search, $btn, $showBox, timer;
 	return {
@@ -60,7 +61,7 @@ var showText = (function() {
 		}
 	}
 }())
-
+//滚轴事件
 window.onscroll = function(e) {
 	var $herdFix = document.querySelector(".headerFix");
 	e = e || event;
@@ -82,8 +83,7 @@ var search = (function() {
 					this.insertData(data.docType);
 				})
 		},
-		event() {
-		},
+		event() {},
 		getData() {
 			let url = "http://yuedu.163.com/search.do";
 			let data = {
@@ -97,8 +97,8 @@ var search = (function() {
 		}
 	}
 
-
 }())
+//json渲染
 var showContent = (function() {
 	let $el, $showBox, $frag;
 	return {
@@ -142,4 +142,123 @@ var showContent = (function() {
 	}
 }())
 
+var shufflingHuai = (function() {
+	let $el
+	return {
+		init($ele) {
+			$el = $($ele);
+			this.event()
+		},
+		event() {
+			var _this = this;
+			$el.on("mouseenter", "li", function() {
+				_this.hidden();
+				$(this).children("p").addClass("hidden");
+				$(this).children("div").addClass("show");
+			})
+		},
+		hidden() {
+			var $liAll = $el.children("li");
+			for(let i = 0; i < $liAll.length; i++) {
+				$liAll[i].children[0].className = "";
+				$liAll[i].children[1].className = "hidden";
+			}
+		}
+	}
 
+}())
+
+var shufflingIneu = (function() {
+	let $el
+	return {
+		init($ele) {
+			$el = $($ele);
+			this.event()
+		},
+		event() {
+			var _this = this;
+			$el.on("mouseenter", "li", function() {
+				_this.hidden();
+				$(this).children("p").addClass("hidden");
+				$(this).children("div").addClass("show");
+			})
+		},
+		hidden() {
+			var $liAll = $el.children("li");
+			for(let i = 0; i < $liAll.length; i++) {
+				$liAll[i].children[0].className = "";
+				$liAll[i].children[1].className = "hidden";
+			}
+		}
+	}
+
+}())
+
+var shufflingIneu = (function() {
+	let $el
+	return {
+		init($ele) {
+			$el = $($ele);
+			this.event()
+		},
+		event() {
+			var _this = this;
+			$el.on("mouseenter", "li", function() {
+				_this.hidden();
+				$(this).children("p").addClass("hidden");
+				$(this).children("div").addClass("show");
+			})
+		},
+		hidden() {
+			var $liAll = $el.children("li");
+			for(let i = 0; i < $liAll.length; i++) {
+				$liAll[i].children[0].className = "";
+				$liAll[i].children[1].className = "hidden";
+			}
+		}
+	}
+
+}())
+
+var shufflingHigh = (function() {
+	let $el
+	return {
+		init($ele) {
+			$el = $($ele);
+			this.event()
+		},
+		event() {
+			var _this = this;
+			$el.on("mouseenter", "li", function() {
+				_this.hidden();
+				$(this).children("p").addClass("hidden");
+				$(this).children("div").addClass("show");
+			})
+		},
+		hidden() {
+			var $liAll = $el.children("li");
+			for(let i = 0; i < $liAll.length; i++) {
+				$liAll[i].children[0].className = "";
+				$liAll[i].children[1].className = "hidden";
+			}
+		}
+	}
+
+}())
+
+
+//$(document).ready(function() {
+//	$(".showImg").on("mouseenter", "li", function() {
+//		hidden();
+//		$(this).children("p").addClass("hidden");
+//		$(this).children("div").addClass("show");
+//	})
+//})
+//
+//function hidden() {
+//	var $liAll = $(".showImg").children("li");
+//	for(let i = 0; i < $liAll.length; i++) {
+//		$liAll[i].children[0].className = "";
+//		$liAll[i].children[1].className = "hidden";
+//	}
+//}
