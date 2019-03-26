@@ -381,6 +381,47 @@ a {
 
 
 /*尾部*/
+
+.index_bottom{
+	background-color: #fafafa;
+    margin-top: 79px;
+    border-top: 1px solid #eee;
+}
+.ib_nav{
+	width: 980px;
+    margin: 0 auto;
+    padding: 38px 0 55px;
+}
+.ib_ul{
+	padding: 0 88px;
+	height: 144px;
+}
+.ib_ul li{
+	float: left;
+    width: 115px;
+    padding: 0 23px 0 33px;
+    border-right: 1px solid #eee;
+}
+.ib_ul .ib_li{
+	padding-left: 0;
+}
+.ib_ul li h3{
+	color: #655;
+    font-size: 16px;
+}
+.ib_ul li p{
+	line-height: 30px;
+    height: 120px;
+    overflow: hidden;
+}
+.ib_ul li a{
+	white-space: nowrap;
+    color: #888;
+	margin: 0 5px 0 0;
+	font-size: 12px
+}
+
+
 .com_flink,.com_flink a,.com_footer2{
     font-size: 12px;
     color: gray;

@@ -61,19 +61,6 @@ var showText = (function() {
 		}
 	}
 }())
-//滚轴事件
-window.onscroll = function(e) {
-	var $herdFix = document.querySelector(".headerFix");
-	e = e || event;
-	const doc = document.documentElement;
-	let restScroll = parseInt(doc.scrollTop);
-	if(restScroll > 177) {
-		$herdFix.style.display = "block";
-	} else {
-		$herdFix.style.display = "none";
-	}
-}
-
 var search = (function() {
 	return {
 		init() {
@@ -194,32 +181,6 @@ var shufflingIneu = (function() {
 
 }())
 
-var shufflingIneu = (function() {
-	let $el
-	return {
-		init($ele) {
-			$el = $($ele);
-			this.event()
-		},
-		event() {
-			var _this = this;
-			$el.on("mouseenter", "li", function() {
-				_this.hidden();
-				$(this).children("p").addClass("hidden");
-				$(this).children("div").addClass("show");
-			})
-		},
-		hidden() {
-			var $liAll = $el.children("li");
-			for(let i = 0; i < $liAll.length; i++) {
-				$liAll[i].children[0].className = "";
-				$liAll[i].children[1].className = "hidden";
-			}
-		}
-	}
-
-}())
-
 var shufflingHigh = (function() {
 	let $el
 	return {
@@ -247,18 +208,46 @@ var shufflingHigh = (function() {
 }())
 
 
-//$(document).ready(function() {
-//	$(".showImg").on("mouseenter", "li", function() {
-//		hidden();
-//		$(this).children("p").addClass("hidden");
-//		$(this).children("div").addClass("show");
-//	})
-//})
-//
-//function hidden() {
-//	var $liAll = $(".showImg").children("li");
-//	for(let i = 0; i < $liAll.length; i++) {
-//		$liAll[i].children[0].className = "";
-//		$liAll[i].children[1].className = "hidden";
-//	}
-//}
+//滚轴事件
+var toTop = (function() {
+	let $tot;
+	return {
+
+		init() {
+			$tot = document.querySelector(".to-top");
+			this.event()
+		},
+		event() {
+			var _this = this;
+			window.onscroll = function(e) {
+				e = e || event;
+				var doc = document.documentElement;
+				var scroll = parseInt(doc.scrollTop);
+				var $herdFix = document.querySelector(".headerFix");
+				if(scroll > 50) {
+					$tot.style.visibility = "initial";
+				} else {
+					$tot.style.visibility = "hidden";
+				}
+				if(scroll > 177) {
+					$herdFix.style.display = "block";
+				} else {
+					$herdFix.style.display = "none";
+				}
+			}
+			$tot.onclick = function() {
+				var doc = document.documentElement;
+				var scroll = parseInt(doc.scrollTop);
+				var timer = setInterval(function() {
+					console.log(scroll)
+					scroll -= 50
+					doc.scrollTop = scroll;
+					if(scroll < 0) {
+						clearInterval(timer);
+					}
+				}, 10);
+			}
+		}
+	}
+
+}())

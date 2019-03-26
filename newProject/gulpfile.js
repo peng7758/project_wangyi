@@ -1,4 +1,4 @@
-const env = 'dev';
+const env = 'build';
 if(env === 'dev') {
   require('./gulp.dev')
 } else {
