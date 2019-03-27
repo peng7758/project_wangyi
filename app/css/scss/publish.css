@@ -1,0 +1,408 @@
+@charset "UTF-8";
+.funav {
+  position: relative; }
+  .funav .headerfunav {
+    position: relative;
+    width: 960px;
+    padding-left: 20px;
+    margin: 0 auto; }
+    .funav .headerfunav ul {
+      height: 42px; }
+      .funav .headerfunav ul li {
+        float: left;
+        height: 42px;
+        line-height: 42px; }
+        .funav .headerfunav ul li a {
+          color: #888;
+          font-size: 14px; }
+        .funav .headerfunav ul li .sep {
+          padding: 0 8px;
+          color: #888; }
+
+/*下拉出现的导航条*/
+#hiddenNav {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  height: 46px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #c4c4c4; }
+  #hiddenNav .hv-publish {
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 47px;
+    overflow: hidden;
+    font-size: 100%;
+    font-weight: 400;
+    float: left; }
+    #hiddenNav .hv-publish a {
+      display: block;
+      height: 47px;
+      line-height: 47px;
+      text-align: center;
+      background-color: #ca4c40;
+      font-size: 16px;
+      color: #fafafa; }
+  #hiddenNav .hv-ul {
+    float: left;
+    margin-left: 20px; }
+    #hiddenNav .hv-ul li {
+      float: left;
+      padding: 0 7px;
+      line-height: 46px;
+      font-size: 14px;
+      color: #665656; }
+      #hiddenNav .hv-ul li a {
+        color: #665656; }
+      #hiddenNav .hv-ul li a:hover {
+        color: #ca4c40; }
+  #hiddenNav .hv-search {
+    float: right;
+    width: 235px;
+    height: 32px;
+    margin: 7px 0 0; }
+    #hiddenNav .hv-search .hv-putin {
+      float: left;
+      width: 173px;
+      height: 12px;
+      padding: 9px;
+      border: 1px solid #c9483c;
+      background: #fff; }
+    #hiddenNav .hv-search button {
+      float: left;
+      outline: none;
+      border: none;
+      width: 42px;
+      height: 32px;
+      background: url(../../../index/img/logo.png) no-repeat 0 -58px; }
+
+.main-con {
+  position: relative;
+  /*图片轮播部分*/
+  /*主编推荐*/
+  /*精品图书*/
+  /*独家首发*/
+  /*合作专区*/ }
+  .main-con .smaBanner {
+    margin-top: 26px;
+    height: 280px; }
+    .main-con .smaBanner .swiper-container {
+      float: left;
+      width: 700px;
+      height: 250px;
+      position: relative;
+      overflow: hidden; }
+      .main-con .smaBanner .swiper-container .swiper-wrapper {
+        width: 9999px;
+        height: 250px;
+        position: absolute; }
+        .main-con .smaBanner .swiper-container .swiper-wrapper .swiper-slide {
+          width: 700px;
+          height: 250px;
+          float: left; }
+          .main-con .smaBanner .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 100%;
+            height: 100%; }
+    .main-con .smaBanner .tongzhi {
+      float: left;
+      position: relative;
+      width: 698px;
+      height: 28px;
+      background-color: #fffdea;
+      border: 1px solid #f2f0df;
+      overflow: hidden; }
+      .main-con .smaBanner .tongzhi i {
+        position: absolute;
+        top: 3px;
+        left: 20px;
+        font-size: 20px; }
+      .main-con .smaBanner .tongzhi a {
+        margin-left: 50px;
+        float: left;
+        color: #868686;
+        font-size: 14px;
+        line-height: 28px; }
+  .main-con .zhubian {
+    margin-top: 40px;
+    zoom: 1;
+    height: 439px; }
+    .main-con .zhubian .left header {
+      margin-bottom: 18px; }
+      .main-con .zhubian .left header h2 {
+        font-size: 18px;
+        line-height: 18px;
+        color: #000; }
+    .main-con .zhubian .left .contents {
+      border: 1px solid #ebe6e1;
+      height: 401px; }
+      .main-con .zhubian .left .contents .con-book {
+        zoom: 1; }
+        .main-con .zhubian .left .contents .con-book li {
+          float: left;
+          padding: 20px;
+          width: 308px;
+          border-right: 1px solid #ebe6e1;
+          position: relative; }
+          .main-con .zhubian .left .contents .con-book li div .bookpic {
+            float: left;
+            margin: 0 15px 0 0;
+            overflow: hidden; }
+          .main-con .zhubian .left .contents .con-book li div h3 a {
+            max-height: 44px;
+            line-height: 22px;
+            overflow: hidden;
+            font-size: 16px;
+            color: #655;
+            font-weight: 700; }
+          .main-con .zhubian .left .contents .con-book li div h3 a:hover {
+            color: #ca4c40; }
+          .main-con .zhubian .left .contents .con-book li div p {
+            height: 54px;
+            line-height: 18px;
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            letter-spacing: 1px;
+            overflow: hidden;
+            color: #888;
+            margin: 6px 0 5px; }
+          .main-con .zhubian .left .contents .con-book li div .read {
+            position: absolute;
+            bottom: 23px;
+            color: #655;
+            font-weight: 700; }
+        .main-con .zhubian .left .contents .con-book .up {
+          border-bottom: 1px solid #ebe6e1; }
+        .main-con .zhubian .left .contents .con-book .rt {
+          border-right: none;
+          padding-right: 21px; }
+    .main-con .zhubian .hotSale {
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .main-con .zhubian .hotSale .hot-checkMore {
+        height: 48px;
+        line-height: 48px; }
+  .main-con .con-recommend .paperBook .pb {
+    height: 325px; }
+    .main-con .con-recommend .paperBook .pb li {
+      height: 284px; }
+      .main-con .con-recommend .paperBook .pb li .paper-buy {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 90px;
+        height: 29px;
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -45.5px;
+        color: #c9483c;
+        line-height: 29px;
+        background: #FFF4F3;
+        border: 1px solid #D44638;
+        border-radius: 2px; }
+  .main-con .jp-book {
+    height: 568px; }
+    .main-con .jp-book .left .jpts {
+      height: 530px; }
+  .main-con .dj-first {
+    height: 276px; }
+  .main-con .partnerBook {
+    border: 1px solid #f0ebe6;
+    padding: 0 20px 20px;
+    height: 259px; }
+    .main-con .partnerBook .partnerList {
+      height: 57px; }
+      .main-con .partnerBook .partnerList ul li {
+        float: left;
+        width: 156px;
+        overflow: hidden;
+        height: 56px;
+        line-height: 55px;
+        cursor: pointer;
+        border-bottom: 1px solid #f0ebe6;
+        text-align: center; }
+    .main-con .partnerBook .partnerShow {
+      padding: 20px 0 0;
+      border: none; }
+      .main-con .partnerBook .partnerShow .pts .pts-words {
+        float: left;
+        width: 246px;
+        margin-right: 20px; }
+        .main-con .partnerBook .partnerShow .pts .pts-words h4 {
+          font-size: 14px; }
+          .main-con .partnerBook .partnerShow .pts .pts-words h4 img {
+            height: 48px; }
+      .main-con .partnerBook .partnerShow .pts ul {
+        float: left; }
+        .main-con .partnerBook .partnerShow .pts ul li {
+          float: left;
+          margin: 0 20px 0 0;
+          position: relative;
+          width: 114px;
+          height: 160px; }
+          .main-con .partnerBook .partnerShow .pts ul li span {
+            position: absolute;
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            background-color: #000;
+            opacity: .7;
+            left: 0;
+            bottom: 0;
+            color: #fff;
+            text-align: center; }
+
+/*合作伙伴*/
+.friends {
+  background-color: #fafafa;
+  margin-top: 79px;
+  border-top: 1px solid #eee; }
+  .friends .friendsList {
+    width: 980px;
+    margin: 0 auto;
+    position: relative; }
+    .friends .friendsList h3 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -18px;
+      width: 140px;
+      font-size: 24px;
+      color: #888; }
+    .friends .friendsList p {
+      padding: 30px 10px 20px 30px;
+      overflow: hidden;
+      border-left: 1px solid #eee;
+      margin-left: 140px; }
+      .friends .friendsList p a {
+        color: #777;
+        float: left;
+        padding-right: 30px;
+        white-space: nowrap;
+        height: 20px;
+        padding-bottom: 10px; }
+
+/*公共书本ul样式*/
+.ul-content {
+  border: 1px solid #ebe6e1; }
+  .ul-content .pb-ul {
+    padding: 10px 9px; }
+    .ul-content .pb-ul li {
+      height: 235px;
+      float: left;
+      padding: 10px 11px;
+      width: 114px;
+      overflow: hidden;
+      position: relative; }
+      .ul-content .pb-ul li img {
+        width: 114px;
+        height: 160px; }
+      .ul-content .pb-ul li h3 {
+        font-size: 16px;
+        line-height: 22px;
+        max-height: 44px;
+        overflow: hidden;
+        margin: 6px 0; }
+      .ul-content .pb-ul li p {
+        color: #888;
+        height: 18px;
+        overflow: hidden; }
+
+/*分类头部公共样式*/
+.con-recommend {
+  margin-top: 40px;
+  zoom: 1; }
+  .con-recommend header {
+    margin-bottom: 18px; }
+    .con-recommend header h2 {
+      font-size: 18px;
+      line-height: 18px;
+      color: #000;
+      display: inline; }
+    .con-recommend header a {
+      float: right;
+      margin-top: 10px; }
+
+/*left公共样式*/
+.left {
+  float: left;
+  width: 700px; }
+
+/*right公共样式*/
+.right {
+  float: right;
+  width: 260px; }
+  .right header {
+    margin-bottom: 18px;
+    position: relative; }
+    .right header h2 {
+      font-size: 18px;
+      line-height: 18px;
+      color: #000; }
+  .right .showBookUl {
+    border: 1px solid #ebe6e1; }
+    .right .showBookUl li {
+      border-bottom: 1px solid #f5f2f0;
+      overflow: hidden; }
+      .right .showBookUl li p {
+        height: 43px;
+        line-height: 43px;
+        padding: 0 14px 0 22px;
+        overflow: hidden; }
+        .right .showBookUl li p a {
+          height: 43px;
+          line-height: 43px;
+          font-size: 14px; }
+          .right .showBookUl li p a i {
+            color: #aaa;
+            margin-right: 16px;
+            font-family: arial; }
+      .right .showBookUl li div {
+        padding: 20px 14px 8px 20px;
+        position: relative;
+        height: 116px; }
+        .right .showBookUl li div img {
+          float: left;
+          margin-left: 34px;
+          margin-right: 14px;
+          width: 74px;
+          height: 104px; }
+        .right .showBookUl li div i {
+          position: absolute;
+          top: 14px;
+          left: 20px;
+          color: #c9483c;
+          font-size: 18px;
+          font-family: arial; }
+        .right .showBookUl li div .f-cb h3 {
+          line-height: 22px;
+          max-height: 44px;
+          overflow: hidden; }
+          .right .showBookUl li div .f-cb h3 a {
+            text-decoration: none;
+            color: #333;
+            outline: none;
+            font-size: 16px; }
+        .right .showBookUl li div .f-cb p {
+          color: #888;
+          margin-top: 5px; }
+    .right .showBookUl .checkMore {
+      height: 31px;
+      line-height: 31px;
+      font-size: 16px; }
+      .right .showBookUl .checkMore .iconfont {
+        font-size: 10px;
+        margin-left: 16px; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }

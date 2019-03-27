@@ -1,0 +1,72 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input {
+  margin: 0;
+  padding: 0; }
+
+a, u {
+  text-decoration: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input {
+  outline: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+.clear_fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clear_fix {
+  zoom: 1; }
+
+/* 上面是样式 合并之后可以删除 !!*/
+/* 下面这个群标签是描述说的那个 */
+.com_foot {
+  background-color: #fafafa;
+  border-top: 1px solid #eee; }
+  .com_foot .com_footer {
+    width: 980px;
+    margin: 0 auto;
+    padding: 40px 0 50px; }
+    .com_foot .com_footer .com_footer1 {
+      line-height: 17px; }
+      .com_foot .com_footer .com_footer1 .com_flink {
+        font-size: 12px;
+        color: gray;
+        text-align: center; }
+        .com_foot .com_footer .com_footer1 .com_flinka:hover {
+          color: #c9483c; }
+        .com_foot .com_footer .com_footer1 .com_flink.sep {
+          margin: 0 6px;
+          color: #ccc; }
+    .com_foot .com_footer .com_footer2 {
+      padding: 10px 0 7px 0;
+      font-size: 12px;
+      color: gray;
+      text-align: center; }
+    .com_foot .com_footer .com_footer3 {
+      width: 980px;
+      height: 16px;
+      margin: 0 auto;
+      background: url(../images/shareto_03.jpg) no-repeat center; }
